@@ -257,6 +257,9 @@ li{
   text-align: center;
   font-size: 34px;
 }
+.guitar-cover img{
+  width: 100%;
+}
 .guitar-sec{
   overflow: hidden;
   height: 700px;
