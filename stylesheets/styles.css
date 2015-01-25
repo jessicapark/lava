@@ -6,6 +6,7 @@ body {
   font:14px/1.5 'Open Sans',"Hiragino Sans GB", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#000;
   font-weight:300;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -215,11 +216,11 @@ li{
   width: 12%;
 }
 #nav  > .nav-wrap > ul > li.hover{
-  margin-bottom: -3px;
+  margin-top: -1px;
   border-bottom: 2px #000 solid;
 }
 #scd-nav{
-  background: rgba(240,240,240,0.8);
+  background: rgba(240,240,240,0.9);
   height: 70px;
   line-height: 70px;
   color: #a0a0a0;
