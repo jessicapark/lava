@@ -3,14 +3,16 @@
 body {
   padding:0;
   margin: 0;
-  font:14px/1.5 'Open Sans',"Hiragino Sans GB", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px/1.5 'Open Sans', Source-Han-Light186205, "Hiragino Sans GB", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#000;
   font-weight:300;
+  letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin:0 0 20px;
+  font-weight:300;
 }
 
 p, ul, ol, table, pre, dl {
@@ -22,13 +24,16 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:40px;
 }
 
 h2 {
+  font-size: 40px;
 }
 
 h3, h4, h5, h6 {
+  font-size: 19px;
+
 }
 
 a {
@@ -177,6 +182,7 @@ li{
   display: inline-block;
   text-decoration: none;
   float: left;
+  cursor: pointer;
 }
 
 /****** css3 transition ******/
@@ -210,7 +216,6 @@ li{
 }
 #nav > .nav-wrap > ul > li{
   width: 22%;
-  cursor: pointer;
 }
 #nav > .nav-wrap > ul > li:nth-child(3){
   width: 12%;
@@ -273,5 +278,13 @@ li{
 }
 .guitar-sec-topbottom img{
   height: 100%;
+}
+.sec-content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.sec-wrap{
+
 }
 
