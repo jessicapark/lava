@@ -31,16 +31,19 @@ h2 {
   font-size: 40px;
   line-height: 50px;
 }
-
-h3, h4, h5, h6 {
+h3{
+  font-size: 23px;
+  line-height:1.5;
+}
+h4, h5, h6 {
   font-size: 19px;
 
 }
 
 a {
-  color:#39c;
-  font-weight:400;
+  color:#000;
   text-decoration:none;
+  cursor: pointer;
 }
 
 a small {
@@ -92,7 +95,14 @@ th {
   color:#444;
 }
 
+textarea{
+  border: 1px #c1c1c1 solid;
+}
 
+button{
+  background: #fff;
+  border: 1px #c1c1c1 solid;
+}
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
@@ -182,8 +192,24 @@ li{
   cursor: pointer;
 }
 
-/****** css3 transition ******/
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
 
+
+::selection{color:#fff;background:#000;}
+ ::-moz-selection{color:#fff;background:#000;}
+::-webkit-selection{color:#fff;background:#000;}
 
 /*************************/
 
@@ -192,6 +218,7 @@ li{
   margin:0;
 }
 #nav{
+  position: relative;
   text-align: center;
   height: 70px;
   line-height: 70px;
@@ -318,4 +345,533 @@ li{
 .guitar-design .sec4 img{
   left: 40%;
 }
+
+
+/******explore********/
+
+.explore{
+  background: #f2f2f2;
+}
+.explore-bg{
+  width: 100%;
+  position: absolute;
+}
+.explore-bg img{
+  width: 100%;
+}
+
+#tab-nav{
+  position: relative;
+  border-bottom: 1px #c1c1c1 solid;
+  height: 60px;
+  line-height: 60px;
+  color: #000;
+  width: 960px;
+  margin: 0 auto;
+  font-size: 14px;
+  z-index: 99;
+}
+
+.explore-detail #tab-nav{
+  border-bottom: 1px rgba(255,255,255,0.5) solid;
+  color: #fff;
+}
+.explore-detail #tab-nav a{
+  color: #fff;
+  opacity: 0.5;
+}
+
+#tab-nav > .nav-wrap > ul > li{
+  opacity: 0.4;
+  margin-right: 30px;
+  cursor: pointer;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+#tab-nav > .nav-wrap > ul > li:hover{
+  opacity: 1;
+}
+#tab-nav > .nav-wrap > ul > li.hover{
+  opacity: 1;
+  margin-top: -1px;
+  border-bottom: 2px #000 solid;
+}
+.btn-signin{
+  float: right;
+}
+.btn-login{
+  float: right;
+}
+.explore-list{
+  width: 960px;
+  margin: 50px auto;
+  position: relative;
+}
+.explore-list ul{
+  width: 100%;
+}
+.explore-list ul li{
+  width: 50%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  height: 240px;
+
+}
+.explore-list ul li:nth-child(1){
+  width: 100%;
+  height: 480px;
+}
+.explore-list ul li .explore-list-pic{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.explore-list ul li.pic-right .explore-list-pic{
+  opacity: 1;
+  float: right;
+}
+.explore-list ul li .explore-list-pic img{
+  width: 100%;
+}
+.explore-list ul li .explore-list-text{
+  width: 42%;
+  margin: 4%;
+  height: 82%;
+  float: left;
+  line-height:1.8;
+  position: relative;
+}
+.explore-list ul li .explore-list-text h3{
+  font-size: 19px;
+}
+.explore-list ul li:nth-child(1) .explore-list-text h3{
+  font-size: 23px;
+  padding-bottom: 15px;
+  border-bottom: 1px #ccc solid;
+}
+.ico{
+  width: 100%;
+  height: 30px;
+  margin: 20px 0;
+}
+.ico span{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  display: none;
+}
+.ico-news{
+  background: url('../img/ico-news.png');
+}
+.ico-study{
+  background: url('../img/ico-study.png');
+}
+.ico-interesting{
+  background: url('../img/ico-interesting.png');
+}
+.ico-original{
+  background: url('../img/ico-original.png');
+}
+.explore-list ul li a{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.explore-list ul li:hover .explore-list-pic{
+  opacity: 0.5;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.explore-list ul li .explore-list-text .explore-list-time{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+line-height: 16px;
+}
+.explore-list ul li .explore-list-text .explore-list-like{
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.explore-list ul li .explore-list-text .explore-list-cmt{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+line-height: 16px;
+}
+.explore-list ul li .explore-list-text .explore-list-like:before{
+  width: 16px;
+  height: 16px;
+  position: relative;
+ float: left;
+  display: block;
+  background: url('../img/ico-like.png');
+  content: " ";
+  margin-right: 5px;
+}
+.explore-list ul li .explore-list-text .explore-list-cmt:before{
+  width: 16px;
+  height: 16px;
+  position: relative;
+  display: block;
+ float: left;
+  background: url('../img/ico-cmt.png');
+  content: " ";
+  margin-right: 5px;
+}
+.loading{
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  line-height: 100px;
+  background: #fff;
+}
+
+
+
+
+/*detail*/
+
+.article{
+  position: relative;
+  width: 960px;
+  margin: 120px auto;
+}
+.article-title{
+  color: #fff;
+  height: 325px;
+  margin-bottom: 50px;
+}
+
+.article-title .time{
+  font-size: 28px;
+  font-weight: 600;
+}
+.article-title .title{
+  font-size: 30px;
+}
+.like{
+  font-size: 12px;
+  line-height: 16px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.cmt{
+  font-size: 12px;
+  line-height: 16px;
+  display: inline-block;
+}
+.like:before{
+  width: 16px;
+  height: 16px;
+  position: relative;
+  float: left;
+  display: block;
+  background: url('../img/ico-like.png');
+  content: " ";
+  margin-right: 5px;
+}
+.cmt:before{
+  width: 16px;
+  height: 16px;
+  position: relative;
+  display: block;
+  float: left;
+  background: url('../img/ico-cmt.png');
+  content: " ";
+  margin-right: 5px;
+}
+.article-title-fix{
+
+  width: 200px;
+  position: absolute;
+  border-top: 1px #c1c1c1 solid;
+  padding-top:10px;
+}
+.time,
+.title{
+  font-size: 18px;
+}
+.share{
+  padding:10px 0;
+}
+.article-wrap{
+  line-height: 28px;
+  width: 480px;
+  left: 240px;
+  position: absolute;
+}
+.page {
+  height: 150px;
+  width: 100%;
+  border-top: 1px #c1c1c1 solid;
+  border-bottom: 1px #c1c1c1 solid;
+}
+.page .title{
+  width: 80%;
+  margin-right: 20%;
+}
+.page .next .title{
+  margin-right: 0%;
+  margin-left: 20%
+}
+.page .prev{
+  width: 50%;
+  float: left;
+}
+
+.page .next{
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+.page .time{
+  margin-top: 10px;
+}
+.page .title{
+  height: 60px;
+}
+.comment{
+  margin: 30px 0 100px 0;
+}
+.comment .avatar{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+  float: left;
+}
+.comment .comment-li{
+  float: left;
+  width: 410px;
+}
+.comment-list {
+  border-top: 1px #c1c1c1 solid;
+}
+.comment-list li{
+  padding: 20px 0;
+  border-bottom: 1px #c1c1c1 solid;
+}
+
+
+.cmt-write{
+  margin: 20px 0;
+
+}
+
+.cmt-write textarea{
+  width: 390px;
+  padding: 10px;
+}
+
+.cmt-write button{
+  height: 32px;
+  width: 100px;
+  border-radius: 16px;
+  margin-top: 10px;
+  font:14px/1.5 'Open Sans', "Hiragino Sans GB", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*********login********/
+
+#login-wrapper{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0,0,0,0.6);
+  top:0;
+  left: 0;
+  z-index: 999;
+}
+#login, #register{
+  width: 300px;
+  height: 330px;
+  padding: 70px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -245px 0 0 -220px;
+  background: #fff;
+}
+#register{
+  width: 300px;
+  height:400px;
+  padding: 60px 70px;
+  margin: -270px 0 0 -220px;
+}
+#login-wrapper h1{
+  font-size: 23px;
+  text-align: center;
+}
+#login-wrapper p{
+  margin: 0 0 15px;
+}
+
+/**** advanced input styling ****/
+/* placeholder */
+::-webkit-input-placeholder  { 
+
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{ 
+
+} 
+input {
+  outline: none;
+}
+
+/* all the input except submit and checkbox */
+#login-wrapper input:not([type="checkbox"]){
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+    -moz-box-sizing : content-box;
+         box-sizing : content-box;
+  -webkit-transition: all 0.2s linear;
+     -moz-transition: all 0.2s linear;
+       -o-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+  display: block;
+  border: 0;
+  border-bottom: 1px #c1c1c1 solid;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  font-size: 14px;
+}
+#login-wrapper input:not([type="checkbox"]):active,
+#login-wrapper input:not([type="checkbox"]):focus{
+  border-bottom: 1px solid #000;
+} 
+
+
+/*styling both submit buttons */
+#login-wrapper p.button input{
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;  
+  border: 1px solid #000; 
+  height: 45px;
+  line-height:45px;
+  background: #fff;
+}
+#login-wrapper p.button input:hover{
+  background: #000;
+  color: #fff;
+}
+#login-wrapper p.button input:active,
+#login-wrapper p.button input:focus{
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+p.login.button,
+p.signin.button{
+  text-align: right;
+  margin: 5px 0;
+}
+
+
+/* styling the checkbox "keep me logged in"*/
+.keeplogin{
+  margin-top: -5px;
+}
+.keeplogin input,
+.keeplogin label{
+  display: inline-block;
+  font-size: 14px;  
+}
+.keeplogin input#loginkeeping{
+  margin-right: 5px;
+}
+.keeplogin label{
+  width: 80%;
+}
+
+
+/*styling the links to change from one form to another */
+
+p.change_link{
+  text-align: center;
+}
+#login-wrapper p.change_link a {
+  display: inline-block;
+  border-bottom: 1px #ccc solid;
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s  linear;
+  -o-transition: color 0.2s linear;
+  -ms-transition: color 0.2s  linear;
+  transition: color 0.2s  linear;
+}
+#login-wrapper p.change_link a:hover {
+  color: #ccc;
+}
+#login-wrapper p.change_link a:active{
+  color: #ccc;
+}
+/** Styling both forms **/
+#register{  
+  z-index: 21;
+  opacity: 0;
+}
+#login{
+  z-index: 22;
+}
+#toregister:target ~ #login-wrapper #register,
+#tologin:target ~ #login-wrapper #login{
+  z-index: 22;
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -ms-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -o-animation-delay: .1s;
+  -ms-animation-delay: .1s;
+  animation-delay: .1s;
+}
+#toregister:target ~ #login-wrapper #login,
+#tologin:target ~ #login-wrapper #register{
+  -webkit-animation-name: fadeOutLeft;
+  -moz-animation-name: fadeOutLeft;
+  -ms-animation-name: fadeOutLeft;
+  -o-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+/** the actual animation, credit where due : http://daneden.me/animate/ ***/
+.animate{
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  
+  -moz-animation-duration: 0.5s;
+  -moz-animation-timing-function: ease;
+  -moz-animation-fill-mode: both;
+  
+  -o-animation-duration: 0.5s;
+  -o-animation-timing-function: ease;
+  -o-animation-fill-mode: both;
+  
+  -ms-animation-duration: 0.5s;
+  -ms-animation-timing-function: ease;
+  -ms-animation-fill-mode: both;
+  
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+
 
