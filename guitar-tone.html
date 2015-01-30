@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Lava</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="javascripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="javascripts/retina.min.js"></script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <div class="wrapper guitar-design Source-Han-Light">
+      <div id="nav">
+        <div class="nav-wrap">
+          <ul>
+            <li class="hover"><span class="bold">LAVA</span>GUITAR
+              <div id="scd-nav">
+                <div class="nav-wrap">
+                  <ul>
+                    <li>概览</li>
+                    <li>设计</li>
+                    <li>手感</li>
+                    <li class="hover">音色</li>
+                    <li>专属琴袋</li>
+                    <li>详细参数</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>发现</li>
+            <li>logo</li>
+            <li>购买</li>
+            <li>关于 <span class="bold">LAVA MUSIC</span></li>
+          </ul>
+        </div>
+      </div>
+      <div id="scd-nav">
+        <div class="nav-wrap">
+          <ul>
+            <li>概览</li>
+            <li class="hover">设计</li>
+            <li>手感</li>
+            <li>音色</li>
+            <li>专属琴袋</li>
+            <li>详细参数</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="guitar-title"><p>强⽽有⼒的⾳⾊，为你的⾳乐带来⽆限可能。</p></div>
+      <div class="guitar-cover"><img src="img/guitar-tone-cover.png"></div>
+      <div class="guitar-sec sec1">
+        <img src="img/guitar-tone-sec1.png">
+        <img src="img/guitar-tone-sec1-2.png">
+        <div class="sec-wrap">
+        <div class="sec-content">
+          <h2>从顶级的木材开始</h2>
+          <h6>木材是对吉他音色影响最大的因素之一，也因此成为了我们设计中至关重要的部分。LAVA GUITAR全身采用 A+ 级的非洲桃花心木、英格曼云杉做成，不仅木纹优美、富有历史感，且声音共鸣更极为出色，是世界顶级吉他的选材标准。</h6>
+        </div>
+        </div>
+      </div>
+      <div class="guitar-sec sec2 guitar-grey guitar-sec-topbottom">
+        <img src="img/guitar-tone-sec2.png">
+        <div class="sec-wrap">
+        <div class="sec-content">
+          <h2>独有的⾳梁设计</h2>
+          <h6><span class="bold">LAVA</span>GUITAR 独有的⾳梁架构设计，让声⾳极为清晰开阔、浑厚扎实，⾳量也⽐其它吉他⼤出 30%，同时让琴⾝受⼒更平衡，多年演奏仍⽆需担⼼琴⾝变形。</h6>
+        </div>
+        </div>
+      </div>
+      <div class="guitar-sec sec3 guitar-sec-topbottom">
+        <img src="img/guitar-tone-sec3.png">
+        <div class="sec-wrap">
+        <div class="sec-content">
+          <h2>小配件，大作用。</h2>
+          <h6><span class="bold">LAVA</span>GUITAR 采⽤韩国 Wilkinson 19:1弦准系统，让调⾳变得⽆⽐精准，⻓久不易⾛⾳；选⽤ D’Addario 的 011-052 号琴弦，让声⾳得以优秀发挥，每⼀个⾳都清晰开阔。</h6>
+        </div>
+        </div>
+      </div>
+
+      <footer>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+
+<script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.md5.js"></script>
+<script type="text/javascript"> 
+    function youziku46865() {
+        var resultStr = $(".Source-Han-Light").text();
+        var md5 = "";
+        resultStr = Trim(resultStr);
+        resultStr = SelectWord(resultStr);
+        md5 = $.md5("f2ee2e7e558e4da591a588e9d010a46d"+"Source-Han-Light" + resultStr);
+        $.getJSON("http://www.youziku.com/webfont/CSSPOST?jsoncallback=?", { "id": md5, "guid": "f2ee2e7e558e4da591a588e9d010a46d", "type": "5" }, function (json) {
+            if (json.result == 0) {/*alert("需要生成");*/
+                $.post("http://www.youziku.com/webfont/PostCorsCreateFont", { "name": "Source-Han-Light", "gid": "f2ee2e7e558e4da591a588e9d010a46d", "type": "5", "text": resultStr }, function (json) {
+                if (json == "0") { /*alert("参数不对");*/
+                } else if (json == "2") {/*alert("超过每日生成字体数的上限");*/
+                } else if (json == "3") { /*alert("当前正在生成请稍后");*/
+                } else {/*alert("正在生成");*/
+                }
+            });
+            }
+            else {/*alert("下载css文件");*/
+                loadExtentFile("http://www.youziku.com/webfont/css?id=" + md5 + "&guid=" + "f2ee2e7e558e4da591a588e9d010a46d" + "&type=5");
+            }
+        });
+    }
+    (function youziku() {
+    if (window.location.href.toString().substring(0, 7) == "file://") {
+            // alert("你当前是通过双击打开html文件，进行本地测试的，这样看不到字体效果，一定要通过本地建立的虚拟网站或发布到外网进行测试。详见有字库的使用说明。");
+        }else{
+        youziku46865();
+        }
+    })()
+</script>
+
+</html>

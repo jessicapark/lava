@@ -722,10 +722,14 @@ line-height: 16px;
 /* placeholder */
 ::-webkit-input-placeholder  { 
 
+  font:14px/1.5 'Open Sans', "Hiragino Sans GB", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
 }
 input:-moz-placeholder,
 textarea:-moz-placeholder{ 
 
+  font:14px/1.5 'Open Sans', "Hiragino Sans GB", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
 } 
 input {
   outline: none;
@@ -737,17 +741,18 @@ input {
   -webkit-box-sizing: content-box;
     -moz-box-sizing : content-box;
          box-sizing : content-box;
-  -webkit-transition: all 0.2s linear;
-     -moz-transition: all 0.2s linear;
-       -o-transition: all 0.2s linear;
-          transition: all 0.2s linear;
+  -webkit-transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
   display: block;
   border: 0;
   border-bottom: 1px #c1c1c1 solid;
-  height: 30px;
+  height: 26px;
   line-height: 30px;
   width: 100%;
   font-size: 14px;
+margin-top: 4px;
 }
 #login-wrapper input:not([type="checkbox"]):active,
 #login-wrapper input:not([type="checkbox"]):focus{
@@ -807,11 +812,11 @@ p.change_link{
 #login-wrapper p.change_link a {
   display: inline-block;
   border-bottom: 1px #ccc solid;
-  -webkit-transition: color 0.2s linear;
-  -moz-transition: color 0.2s  linear;
-  -o-transition: color 0.2s linear;
-  -ms-transition: color 0.2s  linear;
-  transition: color 0.2s  linear;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s  ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s  ease-in-out;
+  transition: color 0.2s  ease-in-out;
 }
 #login-wrapper p.change_link a:hover {
   color: #ccc;
@@ -853,25 +858,39 @@ p.change_link{
 /** the actual animation, credit where due : http://daneden.me/animate/ ***/
 .animate{
   -webkit-animation-duration: 0.5s;
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: both;
   
   -moz-animation-duration: 0.5s;
-  -moz-animation-timing-function: ease;
+  -moz-animation-timing-function: ease-in-out;
   -moz-animation-fill-mode: both;
   
   -o-animation-duration: 0.5s;
-  -o-animation-timing-function: ease;
+  -o-animation-timing-function: ease-in-out;
   -o-animation-fill-mode: both;
   
   -ms-animation-duration: 0.5s;
-  -ms-animation-timing-function: ease;
+  -ms-animation-timing-function: ease-in-out;
   -ms-animation-fill-mode: both;
   
   animation-duration: 0.5s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
 
-
+.loginclose{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #c1c1c1;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s  ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s  ease-in-out;
+  transition: color 0.2s  ease-in-out;
+}
+.loginclose:hover{
+  color: #000;
+}
 
